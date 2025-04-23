@@ -1,0 +1,11 @@
+project_id: prompt-engineering-agent
+description: "AI Agent for Prompt Engineering that generates high-quality prompts"
+
+agents:
+  - id: hello_agent
+    description: "A simple test agent to greeting with user"
+    llm:
+      provider: openai
+      model: gpt-4o
+      api_key: ${OPENAI_API_KEY}
+    tools: []
